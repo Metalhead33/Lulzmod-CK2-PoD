@@ -1,0 +1,770 @@
+# Comment
+1000260786 = {
+	name="Zsolt"
+	dynasty=1100290905
+	dna="cfeai0bad00"
+	#properties="rd00fk"
+	properties="rd00dk"
+	learning = 20
+	disallow_random_traits = yes
+	trait=adventurer
+	health=20
+	martial=5
+	diplomacy=8
+	intrigue=5
+	stewardship=16
+	religion="innocent"
+	culture="hungarian"
+	# Mortal traits
+	trait=midas_touched
+	trait=slavic_leader
+	trait=hedonist
+	trait=genius
+	trait=humble
+	trait=lustful
+	trait=drunkard
+	trait=gluttonous
+	trait=honest
+	trait=ambitious
+	trait=kind
+	father=790146
+	1010.6.26={
+		# Real birth date: 1992.06.26
+		# Assumed start date: 1066
+		birth=yes
+		effect = { set_graphical_culture = hungarian }
+		# Without effect
+		## Hungary
+		add_pressed_claim = k_hungary
+		add_pressed_claim = d_pecs
+		add_pressed_claim = c_pecs
+		add_pressed_claim = c_szekezfehervar
+		add_pressed_claim = c_vas
+		add_pressed_claim = c_fejer
+		add_pressed_claim = d_esztergom
+		add_pressed_claim = c_sopron
+		add_pressed_claim = c_esztergom
+		add_pressed_claim = c_pressburg
+		add_pressed_claim = d_nyitra
+		add_pressed_claim = c_nitra
+		add_pressed_claim = c_trencin
+		add_pressed_claim = c_gemer
+		add_pressed_claim = c_orava
+		add_pressed_claim = d_ungvar
+		add_pressed_claim = c_saris
+		add_pressed_claim = c_bereg
+		add_pressed_claim = c_abauj
+		add_pressed_claim = c_marmaros
+		add_pressed_claim = d_pest
+		add_pressed_claim = c_heves
+		add_pressed_claim = c_pest
+		add_pressed_claim = c_csanad
+		add_pressed_claim = d_transylvania
+		add_pressed_claim = c_szekelyfold
+		add_pressed_claim = c_bihar
+		add_pressed_claim = c_feher
+		add_pressed_claim = d_temes
+		add_pressed_claim = c_bacs
+		## Croatia
+		add_pressed_claim = k_croatia
+		add_pressed_claim = d_croatia
+		add_pressed_claim = d_syrmia
+		add_pressed_claim = c_syrmia
+		add_pressed_claim = d_macva
+		add_pressed_claim = c_macva
+		add_pressed_claim = c_belgrade
+		add_pressed_claim = c_branicevo
+		add_pressed_claim = d_slavonia
+		add_pressed_claim = c_krizevci
+		add_pressed_claim = c_zagreb
+		add_pressed_claim = c_varadzin
+		add_pressed_claim = c_vukovar
+		add_pressed_claim = d_bosnia
+		add_pressed_claim = c_rama
+		add_pressed_claim = c_usora
+		add_pressed_claim = c_soli
+		add_pressed_claim = c_bilino_polje
+		add_pressed_claim = c_zadar
+		add_pressed_claim = c_senj
+		add_pressed_claim = c_veglia
+		add_pressed_claim = c_split
+		add_pressed_claim = d_dalmatia
+		add_pressed_claim = c_imotski
+		add_pressed_claim = c_zachlumia
+		## Wallachia
+		add_pressed_claim = c_severin
+		add_pressed_claim = c_targu_jiu
+		add_pressed_claim = c_campulung
+		# With effect
+		effect = { add_pressed_claim = k_hungary }
+		effect = { add_pressed_claim = d_pecs }
+		effect = { add_pressed_claim = c_pecs }
+		effect = { add_pressed_claim = c_szekezfehervar }
+		effect = { add_pressed_claim = c_vas }
+		effect = { add_pressed_claim = c_fejer }
+		effect = { add_pressed_claim = d_esztergom }
+		effect = { add_pressed_claim = c_sopron }
+		effect = { add_pressed_claim = c_esztergom }
+		effect = { add_pressed_claim = c_pressburg }
+		effect = { add_pressed_claim = d_nyitra }
+		effect = { add_pressed_claim = c_nitra }
+		effect = { add_pressed_claim = c_trencin }
+		effect = { add_pressed_claim = c_gemer }
+		effect = { add_pressed_claim = c_orava }
+		effect = { add_pressed_claim = d_ungvar }
+		effect = { add_pressed_claim = c_saris }
+		effect = { add_pressed_claim = c_bereg }
+		effect = { add_pressed_claim = c_abauj }
+		effect = { add_pressed_claim = c_marmaros }
+		effect = { add_pressed_claim = d_pest }
+		effect = { add_pressed_claim = c_heves }
+		effect = { add_pressed_claim = c_pest }
+		effect = { add_pressed_claim = c_csanad }
+		effect = { add_pressed_claim = d_transylvania }
+		effect = { add_pressed_claim = c_szekelyfold }
+		effect = { add_pressed_claim = c_bihar }
+		effect = { add_pressed_claim = c_feher }
+		effect = { add_pressed_claim = d_temes }
+		effect = { add_pressed_claim = c_bacs }
+		## Croatia
+		effect = { add_pressed_claim = k_croatia }
+		effect = { add_pressed_claim = d_croatia }
+		effect = { add_pressed_claim = d_syrmia }
+		effect = { add_pressed_claim = c_syrmia }
+		effect = { add_pressed_claim = d_macva }
+		effect = { add_pressed_claim = c_macva }
+		effect = { add_pressed_claim = c_belgrade }
+		effect = { add_pressed_claim = c_branicevo }
+		effect = { add_pressed_claim = d_slavonia }
+		effect = { add_pressed_claim = c_krizevci }
+		effect = { add_pressed_claim = c_zagreb }
+		effect = { add_pressed_claim = c_varadzin }
+		effect = { add_pressed_claim = c_vukovar }
+		effect = { add_pressed_claim = d_bosnia }
+		effect = { add_pressed_claim = c_rama }
+		effect = { add_pressed_claim = c_usora }
+		effect = { add_pressed_claim = c_soli }
+		effect = { add_pressed_claim = c_bilino_polje }
+		effect = { add_pressed_claim = c_zadar }
+		effect = { add_pressed_claim = c_senj }
+		effect = { add_pressed_claim = c_veglia }
+		effect = { add_pressed_claim = c_split }
+		effect = { add_pressed_claim = d_dalmatia }
+		effect = { add_pressed_claim = c_imotski }
+		effect = { add_pressed_claim = c_zachlumia }
+		## Wallachia
+		effect = { add_pressed_claim = c_severin }
+		effect = { add_pressed_claim = c_targu_jiu }
+		effect = { add_pressed_claim = c_campulung }
+	}
+	1035.1.1 = { # Turned into vampire
+		religion = "baali"
+		add_trait = "vampire"
+		immortal_age = 24
+		add_trait = "neonate"
+		effect = { join_society = via_hyron }
+		# Vampire traits
+		add_trait = "wyrm_taint"
+		add_trait = "baali"
+		add_trait = "daimoinon_5"
+		add_trait = "obeah_5"
+		add_trait = "quietus_5"
+		add_trait = "chimerstry_5"
+		add_trait = "mortis_5"
+		add_trait = "serpentis_5"
+		add_trait = "necromancy_5"
+		add_trait = "majesty_5"
+		add_trait = "daimoinon_5"
+		add_trait = "resilience_5"
+		add_trait = "bloodpotency_10"
+		add_trait = "vampgeneration3"
+		add_trait = "thaumaturgy_5"
+		add_trait = "auspex_5"
+		add_trait = "dominate_5"
+		add_trait = "obfuscate_5"
+		add_trait = "protean_5"
+		add_trait = "vigor_5"	
+		add_trait = "celerity_5"
+		add_trait = "animalism_5"
+		add_trait = "mytherceria_8"
+		add_trait = "obtenebration_5"
+		add_trait = "vicissitude_5"
+	}
+	1085.1.1 = { # Vampire for 50 years
+		remove_trait = "neonate"
+		add_trait = "ancilla"
+	}
+	1185.1.1 = { # Vampire for 150 years
+		remove_trait = "ancilla"
+		add_trait = "elder"
+	}
+	1229.1.1 = {
+		add_trait = "bookmark1230"
+	}	
+	1285.1.1 = { # Vampire for 250 years
+		remove_trait = "elder"
+		add_trait = "ancient"
+	}
+	1354.1.1 = {
+		remove_trait = "bookmark1230"
+		add_trait = "bookmark1355"
+	}
+	1499.1.1 = {
+		remove_trait = "bookmark1355"
+		add_trait = "bookmark1505"
+		# religion = "masquerade_camarilla"
+	}		
+	1506.1.1 = {
+		remove_trait = "bookmark1505"
+		add_trait = "bookmark1506"
+	}	
+	1999.1.1 = {
+		remove_trait = "bookmark1506"
+		add_trait = bookmark2015
+	}
+	2200.1.1 = {
+		death = yes 
+	}
+}
+1000260787 = {
+	name="Roland"
+	dynasty=1100290928
+    dna="0cfcg0a0ed0"
+    properties="ln0efk"
+	martial=20
+	diplomacy=5
+	intrigue=5
+	stewardship=2
+	learning = 20
+	disallow_random_traits = yes
+	trait=adventurer
+	health=20
+	religion="innocent"
+	culture="norse"
+	# Mortal traits
+	trait=brilliant_strategist
+	trait=sapper
+	trait=master_of_flame
+	trait=norse_leader
+	trait=valhalla_bound
+	trait=viking
+	trait=cynical
+	trait=strong
+	trait=duelist
+	trait=brave
+	trait=ambitious
+	trait=patient
+	trait=shrewd
+	father=505021
+	1000.8.22={
+		# Assumed start date: 1066
+		birth=yes
+		effect = { set_graphical_culture = german }
+	}
+	1026.1.1 = { # Turned into vampire
+		religion = "koldun"
+		add_trait = "vampire"
+		immortal_age = 25
+		add_trait = "neonate"
+		effect = { join_society = via_mutationis }
+		# Vampire traits
+		add_trait = "bloodpotency_10"
+		add_trait = "vampgeneration3"
+		add_trait = "wyrm_taint"
+		add_trait = "tzimisce"
+		add_trait = "daimoinon_5"
+		add_trait = "obeah_5"
+		add_trait = "quietus_5"
+		add_trait = "chimerstry_5"
+		add_trait = "mortis_5"
+		add_trait = "serpentis_5"
+		add_trait = "necromancy_5"
+		add_trait = "vicissitude_5"
+		add_trait = "animalism_5"
+		add_trait = "auspex_5"
+		add_trait = "celerity_5"
+		add_trait = "dominate_5"	
+		add_trait = "majesty_5"	
+		add_trait = "obfuscate_5"
+		add_trait = "protean_5"
+		add_trait = "resilience_5"
+		add_trait = "vigor_5"
+		add_trait = "mytherceria_8"
+		add_trait = "obtenebration_5"
+	}
+	1066.1.1={
+		effect = { add_friend=1000260786 }
+	}
+	1076.1.1 = { # Vampire for 50 years
+		remove_trait = "neonate"
+		add_trait = "ancilla"
+	}
+	1176.1.1 = { # Vampire for 150 years
+		remove_trait = "ancilla"
+		add_trait = "elder"
+	}
+	1229.1.1 = {
+		add_trait = "bookmark1230"
+	}	
+	1276.1.1 = { # Vampire for 250 years
+		remove_trait = "elder"
+		add_trait = "ancient"
+	}
+	1354.1.1 = {
+		remove_trait = "bookmark1230"
+		add_trait = "bookmark1355"
+	}
+	1499.1.1 = {
+		remove_trait = "bookmark1355"
+		add_trait = "bookmark1505"
+	}		
+	1506.1.1 = {
+		remove_trait = "bookmark1505"
+		add_trait = "bookmark1506"
+	}	
+	1999.1.1 = {
+		remove_trait = "bookmark1506"
+		add_trait = bookmark2015
+	}
+}
+
+1000260788 = {
+	name="Ingrid"
+	female = yes
+	dynasty=1100291247
+	dna="aeecd0aai00"
+	properties="be000k"
+	disallow_random_traits = yes
+	martial=35
+	diplomacy=10
+	intrigue=10
+	stewardship=35
+	learning=25
+	religion="innocent"
+	culture="catalan"
+	race=german
+	trait=mastermind_theologian
+	trait=master_of_flame
+	trait=master_warrior
+	trait=norse_leader
+	trait=cynical
+	trait=adventurer
+	health=20
+	trait=fair
+	trait=groomed
+	trait=genius
+	trait=shrewd
+	trait=erudite
+	trait=architect
+	trait=physician
+	trait=shieldmaiden
+	trait=sea_queen
+	father=505022
+	1010.2.11={
+		# Real birth date: 1992.06.26
+		# Assumed start date: 1066
+		birth=yes
+		effect = { set_graphical_culture = german }
+	}
+	1035.1.1 = { # Turned into vampire
+		religion = "tremerelow"
+		add_trait = "vampire"
+		immortal_age = 24
+		add_trait = "neonate"
+		effect = { join_society = code_of_tremere }
+		# Vampire traits
+		add_trait = "wyrm_taint"
+		add_trait = "tremere"
+		add_trait = "daimoinon_5"
+		add_trait = "obeah_5"
+		add_trait = "quietus_5"
+		add_trait = "chimerstry_5"
+		add_trait = "mortis_5"
+		add_trait = "serpentis_5"
+		add_trait = "necromancy_5"
+		add_trait = "thaumaturgy_5"
+		add_trait = "auspex_5"
+		add_trait = "dominate_5"	
+		add_trait = "bloodpotency_10"
+		add_trait = "vampgeneration3"
+		add_trait = "mytherceria_8"
+		add_trait = "majesty_5"	
+		add_trait = "obfuscate_5"
+		add_trait = "protean_5"
+		add_trait = "resilience_5"
+		add_trait = "vigor_5"	
+		add_trait = "celerity_5"
+		add_trait = "animalism_5"
+		add_trait = "obtenebration_5"
+		add_trait = "vicissitude_5"
+	}
+	1066.1.1={
+		effect = { add_friend=1000260786 }
+	}
+	1085.1.1 = { # Vampire for 50 years
+		remove_trait = "neonate"
+		add_trait = "ancilla"
+	}
+	1185.1.1 = { # Vampire for 150 years
+		remove_trait = "ancilla"
+		add_trait = "elder"
+	}
+	1229.1.1 = {
+		add_trait = "bookmark1230"
+	}	
+	1285.1.1 = { # Vampire for 250 years
+		remove_trait = "elder"
+		add_trait = "ancient"
+	}
+	1354.1.1 = {
+		remove_trait = "bookmark1230"
+		add_trait = "bookmark1355"
+	}
+	1499.1.1 = {
+		remove_trait = "bookmark1355"
+		add_trait = "bookmark1505"
+		religion = "masquerade_camarilla"
+	}	
+	1506.1.1 = {
+		remove_trait = "bookmark1505"
+		add_trait = "bookmark1506"
+	}	
+	1999.1.1 = {
+		remove_trait = "bookmark1506"
+		add_trait = bookmark2015
+	}
+	2200.1.1 = {
+		death = yes 
+	}
+}
+
+1000260789 = {
+	name="Adrien"
+	dynasty=1100290919
+	dna="ccfdf0gccd0"
+	properties="qf0jak"
+	martial=10
+	diplomacy=5
+	intrigue=3
+	stewardship=3
+	learning = 20
+	disallow_random_traits = yes
+	trait=adventurer
+	health=20
+	religion="innocent"
+	culture="catalan"
+	trait=brilliant_strategist
+	trait=hellenic_leader
+	trait=ares_own
+	trait=master_of_flame
+	trait=master_warrior
+	trait=impaler
+	trait=gardener
+	trait=erudite
+	trait=wroth
+	trait=diligent
+	trait=gluttonous
+	trait=greedy
+	trait=ambitious
+	trait=cruel
+	father=505021
+	1010.1.30={
+		# Real birth date: 1998. február 12.
+		# Assumed start date: 1066
+		birth=yes
+		effect = { set_graphical_culture = catalan }
+	}
+	1035.1.1 = { # Turned into vampire
+		religion = "koldun"
+		add_trait = "vampire"
+		immortal_age = 25
+		add_trait = "neonate"
+		effect = { join_society = "via_bestiae" }
+		# Vampire traits
+		add_trait = "bloodpotency_10"
+		add_trait = "vampgeneration3"
+		add_trait = "wyrm_taint"
+		add_trait = "tzimisce"
+		add_trait = "daimoinon_5"
+		add_trait = "obeah_5"
+		add_trait = "quietus_5"
+		add_trait = "chimerstry_5"
+		add_trait = "mortis_5"
+		add_trait = "serpentis_5"
+		add_trait = "necromancy_5"
+		add_trait = "vicissitude_5"
+		add_trait = "animalism_5"
+		add_trait = "auspex_5"
+		add_trait = "celerity_5"
+		add_trait = "dominate_5"	
+		add_trait = "majesty_5"	
+		add_trait = "obfuscate_5"
+		add_trait = "protean_5"
+		add_trait = "resilience_5"
+		add_trait = "vigor_5"
+		add_trait = "mytherceria_8"
+		add_trait = "obtenebration_5"
+	}
+	1066.1.1={
+		effect = { add_friend=1000260786 }
+		effect = { add_friend=1000260788 }
+	}
+	1085.1.1 = { # Vampire for 50 years
+		remove_trait = "neonate"
+		add_trait = "ancilla"
+	}
+	1185.1.1 = { # Vampire for 150 years
+		remove_trait = "ancilla"
+		add_trait = "elder"
+	}
+	1229.1.1 = {
+		add_trait = "bookmark1230"
+	}	
+	1285.1.1 = { # Vampire for 250 years
+		remove_trait = "elder"
+		add_trait = "ancient"
+	}
+	1354.1.1 = {
+		remove_trait = "bookmark1230"
+		add_trait = "bookmark1355"
+	}
+	1499.1.1 = {
+		remove_trait = "bookmark1355"
+		add_trait = "bookmark1505"
+		religion = "sabbat"
+	}		
+	1506.1.1 = {
+		remove_trait = "bookmark1505"
+		add_trait = "bookmark1506"
+	}	
+	1999.1.1 = {
+		remove_trait = "bookmark1506"
+		add_trait = bookmark2015
+	}
+	2200.1.1 = {
+		death = yes 
+	}
+}
+
+
+1000260790 = {
+	name="Sedat"
+	dynasty=1100290922
+	dna="bd0fb0g0000"
+	properties="ue00gk"
+	martial=10
+	diplomacy=5
+	intrigue=3
+	stewardship=3
+	learning = 20
+	disallow_random_traits = yes
+	trait=adventurer
+	health=20
+	religion="innocent"
+	culture="turkish"
+	trait=brilliant_strategist
+	trait=tengri_leader
+	trait=mujahid
+	trait=logistics_expert
+	trait=master_of_flame
+	trait=sapper
+	trait=levy_coordinator
+	trait=master_warrior
+	trait=impaler
+	trait=sympathy_pagans
+	trait=robust
+	trait=strong
+	trait=gluttonous
+	trait=is_fat
+	trait=cruel
+	trait=lustful
+	father=505008
+	1010.4.19={
+		# Real birth date: 1987. április 19.
+		# Assumed start date: 1066
+		birth=yes
+		effect = { set_graphical_culture = persian }
+	}
+	1035.1.1 = { # Turned into vampire
+		religion = "salubri_high"
+		add_trait = "vampire"
+		immortal_age = 25
+		add_trait = "neonate"
+		effect = { join_society = via_mutationis }
+		# Vampire traits
+		add_trait = "bloodpotency_10"
+		add_trait = "vampgeneration3"
+		add_trait = "wyrm_taint"
+		add_trait = "salubri"
+		add_trait = "daimoinon_5"
+		add_trait = "obeah_5"
+		add_trait = "quietus_5"
+		add_trait = "chimerstry_5"
+		add_trait = "mortis_5"
+		add_trait = "serpentis_5"
+		add_trait = "necromancy_5"
+		add_trait = "vicissitude_5"
+		add_trait = "animalism_5"
+		add_trait = "auspex_5"
+		add_trait = "celerity_5"
+		add_trait = "dominate_5"	
+		add_trait = "majesty_5"	
+		add_trait = "obfuscate_5"
+		add_trait = "protean_5"
+		add_trait = "resilience_5"
+		add_trait = "vigor_5"
+		add_trait = "mytherceria_8"
+		add_trait = "obtenebration_5"
+	}
+	1066.1.1={
+		effect = { add_friend=1000260786 }
+	}
+	1085.1.1 = { # Vampire for 50 years
+		remove_trait = "neonate"
+		add_trait = "ancilla"
+	}
+	1185.1.1 = { # Vampire for 150 years
+		remove_trait = "ancilla"
+		add_trait = "elder"
+	}
+	1229.1.1 = {
+		add_trait = "bookmark1230"
+	}	
+	1285.1.1 = { # Vampire for 250 years
+		remove_trait = "elder"
+		add_trait = "ancient"
+	}
+	1354.1.1 = {
+		remove_trait = "bookmark1230"
+		add_trait = "bookmark1355"
+	}
+	1499.1.1 = {
+		remove_trait = "bookmark1355"
+		add_trait = "bookmark1505"
+		religion = "sabbat"
+	}		
+	1506.1.1 = {
+		remove_trait = "bookmark1505"
+		add_trait = "bookmark1506"
+	}	
+	1999.1.1 = {
+		remove_trait = "bookmark1506"
+		add_trait = bookmark2015
+	}
+	2200.1.1 = {
+		death = yes 
+	}
+}
+
+1000260791 = {
+	name="Claudia"
+	female = yes
+	dynasty=1100291671
+	dna="acgbg0gc0e0"
+	properties="vh0e0k"
+	disallow_random_traits = yes
+	martial=5
+	diplomacy=5
+	intrigue=10
+	stewardship=10
+	learning=20
+	religion="innocent"
+	culture="italian"
+	trait=adventurer
+	health=20
+	trait=underhanded_rogue
+	trait=cynical
+	trait=eunuch
+	trait=celibate
+	trait=fair
+	trait=gardener
+	trait=chaste
+	trait=temperate
+	trait=charitable
+	trait=diligent
+	trait=patient
+	trait=kind
+	trait=humble
+	trait=shy
+	trait=nun
+	mother=505013
+	employer=1000260789
+	1010.5.16={
+		# Real birth date: Unknown year, Május 16.
+		# Assumed start date: 1066
+		birth=yes
+		effect = { set_graphical_culture = bedouin_arabic }
+	}
+	1035.1.1 = { # Turned into vampire
+		religion = "cainite"
+		add_trait = "vampire"
+		immortal_age = 25
+		add_trait = "neonate"
+		effect = { join_society = via_caeli }
+		# Vampire traits
+		add_trait = "bloodpotency_10"
+		add_trait = "vampgeneration3"
+		add_trait = "wyrm_taint"
+		add_trait = "gangrel"
+		add_trait = "daimoinon_5"
+		add_trait = "obeah_5"
+		add_trait = "quietus_5"
+		add_trait = "chimerstry_5"
+		add_trait = "mortis_5"
+		add_trait = "serpentis_5"
+		add_trait = "necromancy_5"
+		add_trait = "vicissitude_5"
+		add_trait = "animalism_5"
+		add_trait = "auspex_5"
+		add_trait = "celerity_5"
+		add_trait = "dominate_5"	
+		add_trait = "majesty_5"	
+		add_trait = "obfuscate_5"
+		add_trait = "protean_5"
+		add_trait = "resilience_5"
+		add_trait = "vigor_5"
+		add_trait = "mytherceria_8"
+		add_trait = "obtenebration_5"
+	}
+	1066.1.1={
+		add_friend=1000260786
+		effect = { add_friend=1000260786 }
+		add_friend=1000260789
+		effect = { add_friend=1000260789 }
+	}
+	1085.1.1 = { # Vampire for 50 years
+		remove_trait = "neonate"
+		add_trait = "ancilla"
+	}
+	1185.1.1 = { # Vampire for 150 years
+		remove_trait = "ancilla"
+		add_trait = "elder"
+	}
+	1229.1.1 = {
+		add_trait = "bookmark1230"
+	}	
+	1285.1.1 = { # Vampire for 250 years
+		remove_trait = "elder"
+		add_trait = "ancient"
+	}
+	1354.1.1 = {
+		remove_trait = "bookmark1230"
+		add_trait = "bookmark1355"
+	}
+	1499.1.1 = {
+		remove_trait = "bookmark1355"
+		add_trait = "bookmark1505"
+		religion = "masquerade_camarilla"
+	}		
+	1506.1.1 = {
+		remove_trait = "bookmark1505"
+		add_trait = "bookmark1506"
+	}	
+	1999.1.1 = {
+		remove_trait = "bookmark1506"
+		add_trait = bookmark2015
+	}
+	2200.1.1 = {
+		death = yes 
+	}
+}

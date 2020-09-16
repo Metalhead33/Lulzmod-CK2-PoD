@@ -1,0 +1,478 @@
+#################################################
+#
+# ageCustomizer traits removal events
+#
+# Written by Skefrep
+#
+#################################################
+
+namespace = lulz
+
+character_event = {
+	id = lulz.1
+	desc = "Lulz Initialization"
+	
+	trigger = {
+		NOT = { has_global_flag = lulz_initialized }
+		has_landed_title = d_temes	# For the duchy of Temes
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = lulz_initialized
+		any_playable_ruler = {
+			limit = {
+				trait = adventurer
+			}
+			character_event = {
+					id = lulz.2
+			}
+		}
+	}
+	
+	option = {
+		name = "Lulz Initialisation"
+		character_event = { id = lulz.3 }
+		character_event = { id = lulz.2 }
+	}
+}
+
+character_event = {
+	id = lulz.2
+	desc = "Lulz Initialization"
+		
+	is_triggered_only = yes
+		
+	option = {
+		name = "Alright, let's convert"
+		hidden_tooltip = {
+		culture_techpoints = 1000000
+		economy_techpoints = 1000000
+		military_techpoints = 1000000
+		any_demesne_province = {
+		set_variable = { which = count value = 9 }
+			while = {
+			limit = {
+				check_variable = {
+					which = count
+					value = 1
+				}
+			}    
+			subtract_variable = {
+				which = count
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_INFANTRY
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_CAVALRY
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_SKIRMISH
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_MELEE
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_SIEGE_EQUIPMENT
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_RECRUITMENT
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_CASTLE_CONSTRUCTION
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_CITY_CONSTRUCTION
+				value = 1
+			}
+			#change_tech = {
+			#	technology = TECH_TEMPLE_CONSTRUCTION
+			#	value = 1
+			#}
+			change_tech = {
+				technology = TECH_FORTIFICATIONS_CONSTRUCTION
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_TRADE_PRACTICES
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_CONSTRUCTION
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_NAVAL
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_NOBLE_CUSTOMS
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_POPULAR_CUSTOMS
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_RELIGIOUS_CUSTOMS
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_MAJESTY
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_CULTURE_FLEX
+				value = 1
+			}
+			change_tech = {
+				technology = TECH_LEGALISM
+				value = 1
+			}
+			}
+			culture = ROOT
+			religion = ROOT
+			any_province_holding = {
+			if = {
+					limit = {
+						tier = BARON
+						owner = {
+							is_feudal = yes
+						}
+					}
+					# Regular castle buildings
+					add_building = ca_farms_3
+					add_building = ca_farms_3c
+					add_building = ca_farms_2g
+					add_building = ca_forests_3
+					add_building = ca_forests_2g
+					add_building = ca_forests_3c
+					add_building = ca_mines_3
+					add_building = ca_mines_2g
+					add_building = ca_mines_3c
+					add_building = ca_caravans_3
+					add_building = ca_caravans_2g
+					add_building = ca_caravans_3c
+					add_building = ca_fleshlab_3
+					add_building = ca_fleshlab_2g
+					add_building = ca_fleshlab_3c
+					add_building = ca_special_fortifications_4
+					add_building = ca_oppressive_fortifications_4
+					# Cavalry
+					add_building = ca_clan_assamite_nightmarestable_1
+					add_building = ca_clan_baali_nightmarestable_1
+					add_building = ca_clan_brujah_nightmarestable_1
+					add_building = ca_clan_cappadocian_nightmarestable_1
+					add_building = ca_clan_followerofset_nightmarestable_1
+					add_building = ca_clan_gangrel_nightmarestable_1
+					add_building = ca_clan_giovanni_nightmarestable_1
+					add_building = ca_clan_lasombra_nightmarestable_1
+					add_building = ca_clan_malkavian_nightmarestable_1
+					add_building = ca_clan_nosferatu_nightmarestable_1
+					add_building = ca_clan_ravnos_nightmarestable_1
+					add_building = ca_clan_salubri_nightmarestable_1
+					add_building = ca_clan_toreador_nightmarestable_1
+					add_building = ca_clan_tremere_nightmarestable_1
+					add_building = ca_clan_tzimisce_nightmarestable_1
+					add_building = ca_clan_ventrue_nightmarestable_1
+					add_building = ca_clan_gargoyle_nightmarestable_1
+					add_building = ca_clan_caitiff_nightmarestable_1
+					add_building = ca_clan_einherjar_nightmarestable_1
+					add_building = ca_clan_anda_nightmarestable_1
+					add_building = ca_clan_cainite_nightmarestable_1
+					add_building = ca_clan_ashirra_nightmarestable_1
+					# Cavalry 2
+					add_building = ca_clan_assamite_nightmarestable_2
+					add_building = ca_clan_baali_nightmarestable_2
+					add_building = ca_clan_brujah_nightmarestable_2
+					add_building = ca_clan_cappadocian_nightmarestable_2
+					add_building = ca_clan_followerofset_nightmarestable_2
+					add_building = ca_clan_gangrel_nightmarestable_2
+					add_building = ca_clan_giovanni_nightmarestable_2
+					add_building = ca_clan_lasombra_nightmarestable_2
+					add_building = ca_clan_malkavian_nightmarestable_2
+					add_building = ca_clan_nosferatu_nightmarestable_2
+					add_building = ca_clan_ravnos_nightmarestable_2
+					add_building = ca_clan_salubri_nightmarestable_2
+					add_building = ca_clan_toreador_nightmarestable_2
+					add_building = ca_clan_tremere_nightmarestable_2
+					add_building = ca_clan_tzimisce_nightmarestable_2
+					add_building = ca_clan_ventrue_nightmarestable_2
+					add_building = ca_clan_gargoyle_nightmarestable_2
+					add_building = ca_clan_caitiff_nightmarestable_2
+					add_building = ca_clan_einherjar_nightmarestable_2
+					add_building = ca_clan_anda_nightmarestable_2
+					add_building = ca_clan_cainite_nightmarestable_2
+					add_building = ca_clan_ashirra_nightmarestable_2
+					# Clan eminences
+					add_building = ca_clan_assamite_eminence_1
+					add_building = ca_clan_baali_eminence_1
+					add_building = ca_clan_brujah_eminence_1
+					add_building = ca_clan_cappadocian_eminence_1
+					add_building = ca_clan_followerofset_eminence_1
+					add_building = ca_clan_gangrel_eminence_1
+					add_building = ca_clan_giovanni_eminence_1
+					add_building = ca_clan_lasombra_eminence_1
+					add_building = ca_clan_malkavian_eminence_1
+					add_building = ca_clan_nosferatu_eminence_1
+					add_building = ca_clan_ravnos_eminence_1
+					add_building = ca_clan_salubri_eminence_1
+					add_building = ca_clan_toreador_eminence_1
+					add_building = ca_clan_tremere_eminence_1
+					add_building = ca_clan_tzimisce_eminence_1
+					add_building = ca_clan_ventrue_eminence_1
+					add_building = ca_clan_gargoyle_eminence_1
+					add_building = ca_clan_caitiff_eminence_1
+					add_building = ca_clan_einherjar_eminence_1
+					add_building = ca_clan_anda_eminence_1
+					add_building = ca_clan_cainite_eminence_1
+					add_building = ca_clan_ashirra_eminence_1
+					# Haven
+					add_building = ca_haven_5
+					add_building = ca_knights_3
+					add_building = ca_knights_2g
+					add_building = ca_knights_3c
+					add_building = ca_castle_guard_3
+					add_building = ca_castle_guard_2g
+					add_building = ca_castle_guard_3c
+					add_building = ca_militia_3
+					add_building = ca_militia_2g
+					add_building = ca_militia_3c
+					add_building = ca_inn_3
+					add_building = ca_inn_2g
+					add_building = ca_inn_3c
+					add_building = ca_bandits_3
+					add_building = ca_bandits_2g
+					add_building = ca_bandits_3c
+					add_building = ca_elysium_1
+					add_building = ca_nosferatu_warrens_1
+					add_building = ca_hellhound_kennel_1
+					add_building = ca_kinfolk_3
+					add_building = ca_kinfolk_2c
+					add_building = ca_kinfolk_3d
+			}
+			if = {
+					limit = {
+						tier = BARON
+						location = {
+							port = yes
+						}
+						owner = {
+							is_feudal = yes
+						}
+					}
+					add_building = ca_smuggler_3
+					add_building = ca_smuggler_2g
+					add_building = ca_smuggler_3c
+			}
+			if = {
+					limit = {
+						tier = BARON
+						location = {
+							port = yes
+						}
+						owner = {
+							is_republic = yes
+						}
+					}
+					add_building = ct_smuggler_3
+					add_building = ct_smuggler_2g
+					add_building = ct_smuggler_3c
+			}
+			if = {
+					limit = {
+						tier = BARON
+						owner = {
+							is_republic = yes
+						}
+					}
+					# Haven
+					add_building = ct_haven_5
+					add_building = ct_brothel_3
+					add_building = ct_brothel_2g
+					add_building = ct_brothel_3c
+					add_building = ct_nightwatch_3
+					add_building = ct_nightwatch_2g
+					add_building = ct_nightwatch_3c
+					add_building = ct_tavern_3
+					add_building = ct_tavern_2g
+					add_building = ct_tavern_3c
+					# Vampire stuff
+					add_building = ct_civicward_3
+					add_building = ct_civicward_2g
+					add_building = ct_civicward_3c
+					add_building = ct_university_3
+					add_building = ct_university_2g
+					add_building = ct_university_3c
+					add_building = ct_hospital_3
+					add_building = ct_hospital_2g
+					add_building = ct_hospital_3c
+					add_building = ct_orphanage_3
+					add_building = ct_orphanage_2g
+					add_building = ct_orphanage_3c
+					add_building = ct_prison_3
+					add_building = ct_prison_2g
+					add_building = ct_prison_3c
+					add_building = ct_guildward_3
+					add_building = ct_guildward_2g
+					add_building = ct_guildward_3c
+					add_building = ct_slums_3
+					add_building = ct_slums_2g
+					add_building = ct_slums_3c
+					add_building = ct_abbatoirward_3
+					add_building = ct_abbatoirward_2g
+					add_building = ct_abbatoirward_3c
+					add_building = ct_asylum_3
+					add_building = ct_asylum_2g
+					add_building = ct_asylum_3c
+					add_building = ct_papillionward_1
+					add_building = ct_planned_infrastructure_4
+					add_building = ct_streetgang_3
+					add_building = ct_streetgang_2g
+					add_building = ct_streetgang_3c
+					add_building = ct_elysium_1
+					add_building = ct_nosferatu_warrens_1
+					add_building = ct_hellhound_kennel_1
+					add_building = ct_kinfolk_3
+					add_building = ct_kinfolk_2c
+					add_building = ct_kinfolk_3d
+					# Clan eminences
+					add_building = ct_clan_assamite_eminence_1
+					add_building = ct_clan_baali_eminence_1
+					add_building = ct_clan_brujah_eminence_1
+					add_building = ct_clan_cappadocian_eminence_1
+					add_building = ct_clan_followerofset_eminence_1
+					add_building = ct_clan_gangrel_eminence_1
+					add_building = ct_clan_giovanni_eminence_1
+					add_building = ct_clan_lasombra_eminence_1
+					add_building = ct_clan_malkavian_eminence_1
+					add_building = ct_clan_nosferatu_eminence_1
+					add_building = ct_clan_ravnos_eminence_1
+					add_building = ct_clan_salubri_eminence_1
+					add_building = ct_clan_toreador_eminence_1
+					add_building = ct_clan_tremere_eminence_1
+					add_building = ct_clan_tzimisce_eminence_1
+					add_building = ct_clan_ventrue_eminence_1
+					add_building = ct_clan_gargoyle_eminence_1
+					add_building = ct_clan_caitiff_eminence_1
+					add_building = ct_clan_einherjar_eminence_1
+					add_building = ct_clan_anda_eminence_1
+					add_building = ct_clan_cainite_eminence_1
+					add_building = ct_clan_ashirra_eminence_1
+			}
+			if = {
+					limit = {
+						tier = BARON
+						location = {
+							port = yes
+						}
+						owner = {
+							is_priest = yes
+						}
+					}
+					add_building = tp_smuggler_3
+					add_building = tp_smuggler_2g
+					add_building = tp_smuggler_3c
+			}
+			if = {
+					limit = {
+						tier = BARON
+						owner = {
+							is_priest = yes
+						}
+					}
+					# Haven
+					add_building = tp_haven_5
+					add_building = tp_temple_guard_3
+					add_building = tp_temple_guard_2g
+					add_building = tp_temple_guard_3c
+					add_building = tp_monastery_3
+					add_building = tp_monastery_2g
+					add_building = tp_monastery_3c
+					add_building = tp_convent_3
+					add_building = tp_convent_2g
+					add_building = tp_convent_3c
+					add_building = tp_elysium_1
+					add_building = tp_nosferatu_warrens_1
+					add_building = tp_hellhound_kennel_1
+					# Clan eminences
+					add_building = tp_clan_assamite_eminence_1
+					add_building = tp_clan_baali_eminence_1
+					add_building = tp_clan_brujah_eminence_1
+					add_building = tp_clan_cappadocian_eminence_1
+					add_building = tp_clan_followerofset_eminence_1
+					add_building = tp_clan_gangrel_eminence_1
+					add_building = tp_clan_giovanni_eminence_1
+					add_building = tp_clan_lasombra_eminence_1
+					add_building = tp_clan_malkavian_eminence_1
+					add_building = tp_clan_nosferatu_eminence_1
+					add_building = tp_clan_ravnos_eminence_1
+					add_building = tp_clan_salubri_eminence_1
+					add_building = tp_clan_toreador_eminence_1
+					add_building = tp_clan_tremere_eminence_1
+					add_building = tp_clan_tzimisce_eminence_1
+					add_building = tp_clan_ventrue_eminence_1
+					add_building = tp_clan_gargoyle_eminence_1
+					add_building = tp_clan_caitiff_eminence_1
+					add_building = tp_clan_einherjar_eminence_1
+					add_building = tp_clan_anda_eminence_1
+					add_building = tp_clan_cainite_eminence_1
+					add_building = tp_clan_ashirra_eminence_1
+					# Vampire stuff
+					add_building = tp_necropolis_3
+					add_building = tp_necropolis_2g
+					add_building = tp_necropolis_3c
+					add_building = tp_gargoylerookery_3
+					add_building = tp_gargoylerookery_2g
+					add_building = tp_gargoylerookery_3c
+					add_building = tp_oubliette_3
+					add_building = tp_oubliette_3c
+					add_building = tp_leper_3
+					add_building = tp_leper_2g
+					add_building = tp_leper_3c
+					add_building = tp_setitecult_3
+					add_building = tp_setitecult_2g
+					add_building = tp_setitecult_3c
+					add_building = tp_malkaviancult_3
+					add_building = tp_malkaviancult_2g
+					add_building = tp_malkaviancult_3c
+					add_building = tp_fleshchapel_3
+					add_building = tp_fleshchapel_2g
+					add_building = tp_fleshchapel_3c
+					add_building = tp_monumental_shrines_4
+			}
+			}
+		}
+		}
+}
+}
+character_event = {
+	id = lulz.3
+	desc = "Lulz Initialization"
+		
+	is_triggered_only = yes
+		
+	option = {
+		name = "Alright, let's convert"
+		any_friend = {
+		limit = {
+		demesne_size = 1
+		}
+		character_event = {
+		id = lulz.2
+		}
+		}
+	}
+}
